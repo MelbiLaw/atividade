@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="v=ewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema</title>
+</head>
+<body>
+    <h1>programa</h1>
+        <div id="pessoa1"></div>
+        <div id="pessoa2"></div>
+        <div id="resultado"></div>
+
+<script>
+    let pessoa1=Number(prompt("digite o peso da primeira pessoa"));
+    let pessoa2=Number(prompt("digite o peso da segunda pessoa"))
+    let resultado="";
+
+    if (pessoa1>pessoa2)
+    {
+        resultado="a primeira pessoa é mais gorda"
+    }
+    else if (pessoa1<pessoa2)
+    {
+        resultado="a segunda pessoa é mais gorda"
+    }
+    document.getElementById("pessoa1").innerHTML="peso1: "+ pessoa1 +"kg" ;
+    document.getElementById("pessoa2").innerHTML="peso2: "+ pessoa2 + "kg";
+    document.getElementById("resultado").innerHTML="resultado: "+ resultado;
+     
+     </script>
+</body>
+</html>

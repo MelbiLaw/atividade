@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teste de Mesa em JavaScript</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Mesa em JavaScript</h1>
+
+    <table>
+        <tr>
+            <th>Variável</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <td>A (numérico)</td>
+            <td id="A">5000</td>
+        </tr>
+        <tr>
+            <td>C (literal)</td>
+            <td id="C">"MARIA"</td>
+        </tr>
+    </table>
+
+    <h2>Execução do Código:</h2>
+
+    <script>
+        // Inicialização das variáveis
+        let A = 5000;
+        let C = "MARIA";
+
+        // Exibição dos resultados iniciais
+        document.getElementById("A").textContent = A;
+        document.getElementById("C").textContent = C;
+
+        // Verificação da condição
+        if (A >= 1000 && C === "MARIA") {
+            A = A + 3000;
+        }
+
+        // Exibição dos resultados após a execução
+        document.getElementById("A").textContent = A;
+        document.getElementById("C").textContent = C;
+    </script>
+</body>
+</html>

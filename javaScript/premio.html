@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="v=ewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema</title>
+</head>
+<body>
+    <h1>programa</h1>
+        <div id="vendas"></div>
+        <div id="premio"></div>
+        <div id="resultado"></div>
+        <div id="fun"></div>
+
+<script>
+    let fun=prompt("informe o nome do funcionario");
+    let venda=Number(prompt("informe a quantidade de vendas realizada"));
+    let premio=2000;
+    resultado="";
+
+    if (venda>=premio)
+    {
+        resultado="você ganhou o prêmio";
+    }
+    else
+    {
+        resultado="infelizmente você não foi premiado";
+    }
+
+     
+    document.getElementById("fun").innerHTML="funcionario : "+ "a meta do " + fun + " é de:  "+ premio + ",  "+ fun + " vendeu: " + venda;
+    document.getElementById("resultado").innerHTML="resultado : " + resultado;
+     </script>
+</body>
+</html>
